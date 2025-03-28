@@ -1,10 +1,10 @@
-if (Test-Path main.exe){
-    del main.exe
+if (Test-Path harpy.exe){
+    del harpy.exe
 }
 if (Test-Path *.o){
     del *.o
 }
-cc *.c -c
-cc *.o -o main -Wall -Werror -Wextra -O2 -march=native   
-./main
+cc ./src/*.c -c
+cc *.o -o harpy -Wall -Werror -Wextra -O2 -march=native   
+./harpy
 

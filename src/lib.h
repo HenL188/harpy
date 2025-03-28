@@ -10,3 +10,5 @@ int Count( FILE *file);
 void data();
 void key_gen();
 bool check(int n);
+void encrypt();
+void decrypt();
